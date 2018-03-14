@@ -1,0 +1,1 @@
+JSON.parse(`{${(`${document.cookie}`).split("; ").map(el => el.split("=").map(ol => '"' + ol + '"').join(":")).join(',')}}`)
